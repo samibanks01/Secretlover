@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caesar Cipher Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Caesar Cipher Tool</h1>
+  <div class="container">
+    <div class="input-field">
+      <label for="inputText">Enter Text:</label>
+      <textarea id="inputText" rows="5" placeholder="Type your message here"></textarea>
+    </div>
+    <div class="input-field">
+      <label for="shiftValue">Shift Value:</label>
+      <input type="number" id="shiftValue" min="-25" max="25" value="0">
+    </div>
+    <div class="button-group">
+      <button id="encryptButton">Encrypt</button>
+      <button id="decryptButton">Decrypt</button>
+    </div>
+    <div class="output-field">
+      <label for="outputText">Ciphertext:</label>
+      <textarea id="outputText" rows="5" readonly></textarea>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
